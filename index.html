@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Simon</title>
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle">
+        <div class="tile green-tile mb mr" data-num="1"></div>
+        <div class="tile red-tile mb ml" data-num="2"></div>
+        <div class="tile yellow-tile mt mr" data-num="3"></div>
+        <div class="tile blue-tile mt ml" data-num="4"></div>
+        
+        <!-- CONTROLS -->
+        <section class="controls">
+        <h1 class="game-header">Simon</h1>
+        <div class="disp-btns">
+          <div class="disp-contain">
+            <h1 class="dig-disp"></h1>
+            <p>COUNT</p>
+          </div><!--/.disp-contain-->
+          <div class="start-contain">
+            <button class="start-btn control-button"></button>
+            <p>START</p>
+          </div><!--/.disp-contain--> 
+          <div class="strict-contain">
+            <div class="strict-light"></div>
+            <button class="strict-btn control-button"></button>
+            <p>STRICT</p>
+          </div><!--/.disp-contain--> 
+        </div><!--./disp-btns-->
+        <div class="power-contain">
+          <span class="power-labels">OFF</span>
+          <div class="slider-outer" data-pwrstatus="off">
+            <div class="slider-inner"></div>
+          </div>
+          <span class="power-labels">ON</span>
+        </div>
+      </section>
+      </div><!--/.circle-->
+
+      <!-- AUDIO-->
+      <audio class="audio-1" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+      <audio class="audio-2" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+      <audio class="audio-3" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+      <audio class="audio-4" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+      
+    </div><!--/.container -->
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
